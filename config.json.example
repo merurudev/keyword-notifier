@@ -1,4 +1,8 @@
 {
 	"token": "",
-	"keywords": []
+	"keywords": ["りんご", "ばなな"],
+	"notify": {
+		"url": "discord webhook url",
+		"mentionID": "user id"
+	}
 }
