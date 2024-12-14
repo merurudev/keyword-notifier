@@ -12,6 +12,8 @@ client.on('messageCreate', async (msg) => {
 		consola.info(`Detected: ${msg.content}`);
 
 		const info = getMsgInfo(msg);
+		if (!info.isGuild) return;
+		/*
 		if (!info.isGuild) {
 			const data = {
 				username: msg.author.username,
@@ -23,7 +25,7 @@ client.on('messageCreate', async (msg) => {
 				date: msg.author.createdTimestamp,
 			} as DataT;
 			return SendLog(data);
-		}
+		}*/
 		assert(msg.guild);
 
 		const data = {
